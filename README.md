@@ -1,8 +1,12 @@
-# React Native Vkontakte login
+# React Native Vkontakte login (vovkasm's fork)
 
 This module is a wrapper around native VK SDKs for [Android](https://new.vk.com/dev/android_sdk) and [iOS](https://new.vk.com/dev/ios_sdk).
 
 It allows to log in to VK and obtain access token, which you can later use to make VK API calls.
+
+## Differences with origianl module
+
+[ ] Precompile all files, so module can be installed from git repo (no postinstall script)
 
 ## Compatibility
 
