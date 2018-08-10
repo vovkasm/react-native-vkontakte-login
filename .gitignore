@@ -46,7 +46,6 @@ jspm_packages
 /example/android/app/build/
 /example/android/.gradle/
 
-/lib/
 /scripts/**/*.js
 
 /ios/vk-ios-sdk/
