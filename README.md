@@ -6,7 +6,8 @@ It allows to log in to VK and obtain access token, which you can later use to ma
 
 ## Differences with origianl module
 
-[ ] Precompile all files, so module can be installed from git repo (no postinstall script)
+- [x] Precompile all files, so module can be installed from git repo (no postinstall script)
+- [x] Remove all linking scripts (users supposed to make it by hands, sorry... I need control on my sources)
 
 ## Compatibility
 
