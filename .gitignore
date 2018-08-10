@@ -53,3 +53,11 @@ jspm_packages
 /ios/RNVkontakteLogin.xcodeproj/xcuserdata/
 /ios/RNVkontakteLogin.xcodeproj/project.xcworkspace/
 /docs/generated/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
