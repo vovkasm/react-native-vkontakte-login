@@ -9,7 +9,6 @@
     "build-scripts": "tsc -p ./scripts/tsconfig.json",
     "doc": "typedoc --theme markdown --hideGenerator --mdHideSources --excludeExternals --excludePrivate --readme none --target es6 --mode file --out ./docs/generated --name API ./src/",
     "prepublishOnly": "npm run build && npm run build-scripts",
-    "postinstall": "node ./scripts/postinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
