@@ -1,9 +1,12 @@
+require 'pathname'
+
 platform :ios, '9.0'
 
-root_dir = '../../..'
+podfile_dir = Pathname.new(__FILE__).dirname.realpath
+root_dir = podfile_dir.ascend.find {|p| p.join('package.json').exist? }
 
 target 'VkLoginSample' do
-  pod 'React', :path => root_dir + '/node_modules/react-native', :subspecs => [
+  pod 'React', :path => root_dir + 'node_modules/react-native', :subspecs => [
     'Core',
     'CxxBridge',
     'RCTAnimation',
@@ -14,10 +17,10 @@ target 'VkLoginSample' do
     'RCTImage',
     'DevSupport',
   ]
-  pod 'yoga', :path => root_dir + '/node_modules/react-native/ReactCommon/yoga'
-  pod 'DoubleConversion', :podspec => root_dir + '/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
-  pod 'glog', :podspec => root_dir + '/node_modules/react-native/third-party-podspecs/glog.podspec'
-  pod 'Folly', :podspec => root_dir + '/node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'yoga', :path => root_dir + 'node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => root_dir + 'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => root_dir + 'node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => root_dir + 'node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   pod 'react-native-vkontakte-login', :path => root_dir
 end
