@@ -41,16 +41,11 @@ jspm_packages
 *.iml
 /example/ios/Podfile.lock
 /example/ios/Pods/
-/android/build/
-/example/android/build/
-/example/android/app/build/
 /example/android/.gradle/
 
-/scripts/**/*.js
-
-/ios/vk-ios-sdk/
-/ios/RNVkontakteLogin.xcodeproj/xcuserdata/
-/ios/RNVkontakteLogin.xcodeproj/project.xcworkspace/
+# Xcode
+#
+xcuserdata/
 
 # Gradle files
 .gradle/
