@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7625CFD06DC93874F0343BE4 /* libPods-VkLoginSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADDC4D39F81E06C97B31B4DC /* libPods-VkLoginSample.a */; };
 		A252F5F4211F838B0069052B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A252F5F3211F838B0069052B /* AppDelegate.m */; };
 		A252F5FC211F838C0069052B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A252F5FB211F838C0069052B /* Assets.xcassets */; };
 		A252F5FF211F838C0069052B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A252F5FD211F838C0069052B /* LaunchScreen.storyboard */; };
@@ -21,6 +22,9 @@
 		A252F5FE211F838C0069052B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A252F600211F838C0069052B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A252F601211F838C0069052B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADDC4D39F81E06C97B31B4DC /* libPods-VkLoginSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VkLoginSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEE94D30D14A63A4573CCBB /* Pods-VkLoginSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkLoginSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VkLoginSample/Pods-VkLoginSample.debug.xcconfig"; sourceTree = "<group>"; };
+		EBFF8A8B0CFD6FF8EB78B744 /* Pods-VkLoginSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VkLoginSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-VkLoginSample/Pods-VkLoginSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7625CFD06DC93874F0343BE4 /* libPods-VkLoginSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467B8340AFF9235154B62890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADDC4D39F81E06C97B31B4DC /* libPods-VkLoginSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0BD4F8F65285260AADD9FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFEE94D30D14A63A4573CCBB /* Pods-VkLoginSample.debug.xcconfig */,
+				EBFF8A8B0CFD6FF8EB78B744 /* Pods-VkLoginSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A252F5E6211F838B0069052B = {
 			isa = PBXGroup;
 			children = (
 				A252F5F1211F838B0069052B /* VkLoginSample */,
 				A252F5F0211F838B0069052B /* Products */,
+				6E0BD4F8F65285260AADD9FA /* Pods */,
+				467B8340AFF9235154B62890 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A252F605211F838C0069052B /* Build configuration list for PBXNativeTarget "VkLoginSample" */;
 			buildPhases = (
+				A620253F1E7B914CEDE75061 /* [CP] Check Pods Manifest.lock */,
 				A252F5EB211F838B0069052B /* Sources */,
 				A252F5EC211F838B0069052B /* Frameworks */,
 				A252F5ED211F838B0069052B /* Resources */,
+				C5D4CB98E37F42CB0C8A236A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +152,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A620253F1E7B914CEDE75061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VkLoginSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D4CB98E37F42CB0C8A236A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VkLoginSample/Pods-VkLoginSample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/VK-ios-sdk/VKSdkResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/VKSdkResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VkLoginSample/Pods-VkLoginSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A252F5EB211F838B0069052B /* Sources */ = {
@@ -263,6 +328,7 @@
 		};
 		A252F606211F838C0069052B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFEE94D30D14A63A4573CCBB /* Pods-VkLoginSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -280,6 +346,7 @@
 		};
 		A252F607211F838C0069052B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFF8A8B0CFD6FF8EB78B744 /* Pods-VkLoginSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
