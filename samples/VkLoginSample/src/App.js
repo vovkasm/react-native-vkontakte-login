@@ -1,7 +1,6 @@
 import React from 'react';
-import { View, TextInput, Text, StyleSheet } from 'react-native';
+import { Button, View, TextInput, Text, StyleSheet } from 'react-native';
 import VKLogin from 'react-native-vkontakte-login';
-import Button from './Button';
 import Logs from './Logs';
 
 const TEST_IMAGE = require('./assets/ycombinator.png');
@@ -43,7 +42,7 @@ export default class App extends React.Component {
   };
 
   componentDidMount() {
-    VKLogin.initialize(5514471);
+    VKLogin.initialize(6658972);
   }
 
   onLogin = async () => {
@@ -142,9 +141,9 @@ export default class App extends React.Component {
             style={styles.permissionsInput}
             onChangeText={permissions => this.setState({ permissions })}
           />
-          <Button circle onPress={() => this.setState({ permissions: '' })}>1</Button>
-          <Button circle onPress={() => this.setState({ permissions: 'friends email' })}>2</Button>
-          <Button circle onPress={() => this.setState({ permissions: 'friends email photos wall' })}>3</Button>
+          <Button onPress={() => this.setState({ permissions: '' })}>1</Button>
+          <Button onPress={() => this.setState({ permissions: 'friends email' })}>2</Button>
+          <Button onPress={() => this.setState({ permissions: 'friends email photos wall' })}>3</Button>
         </View>
       </View>
     );
