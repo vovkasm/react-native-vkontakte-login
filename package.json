@@ -8,6 +8,7 @@
     "build": "rm -rf ./lib/ && mkdir lib && tsc",
     "doc": "typedoc --theme markdown --hideGenerator --mdHideSources --excludeExternals --excludePrivate --readme none --target es6 --mode file --out ./docs/generated --name API ./src/",
     "prepublishOnly": "npm run build",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

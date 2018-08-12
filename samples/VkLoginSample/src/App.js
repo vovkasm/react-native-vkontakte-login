@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, View, TextInput, Text, StyleSheet } from 'react-native';
-import VKLogin from 'react-native-vkontakte-login';
+import VKLogin from '@vovkasm/react-native-vkontakte-login';
 import Logs from './Logs';
 
 const TEST_IMAGE = require('./assets/ycombinator.png');
@@ -128,11 +128,11 @@ export default class App extends React.Component {
           <Logs logs={this.state.logs} />
         </View>
         <View style={styles.buttonsContainer}>
-          <Button onPress={this.onLogin}>Login</Button>
-          <Button onPress={this.onLogout}>Logout</Button>
-          <Button onPress={this.onCheck}>Is Logged</Button>
-          <Button onPress={this.onRequest}>Request</Button>
-          <Button onPress={this.onShare}>Share</Button>
+          <Button onPress={this.onLogin} title="Login" />
+          <Button onPress={this.onLogout} title="Logout" />
+          <Button onPress={this.onCheck} title="Is Logged" />
+          <Button onPress={this.onRequest} title="Request" />
+          <Button onPress={this.onShare} title="Share" />
         </View>
         <View style={styles.permissionsContainer}>
           <Text style={styles.permissionsLabel}>Permissions:</Text>
@@ -141,9 +141,9 @@ export default class App extends React.Component {
             style={styles.permissionsInput}
             onChangeText={permissions => this.setState({ permissions })}
           />
-          <Button onPress={() => this.setState({ permissions: '' })}>1</Button>
-          <Button onPress={() => this.setState({ permissions: 'friends email' })}>2</Button>
-          <Button onPress={() => this.setState({ permissions: 'friends email photos wall' })}>3</Button>
+          <Button onPress={() => this.setState({ permissions: '' })} title="empty" />
+          <Button onPress={() => this.setState({ permissions: 'friends email' })} title="friends email" />
+          <Button onPress={() => this.setState({ permissions: 'friends email photos wall' })} title="+ photos wall" />
         </View>
       </View>
     );
