@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "esModuleInterop": true,
-    "jsx": "react-native",
+    "jsx": "react",
     "lib": ["es6"],
     "module": "commonjs",
     "noImplicitReturns": true,
