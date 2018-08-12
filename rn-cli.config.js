@@ -10,5 +10,11 @@ module.exports = {
   },
   getProjectRoots: function () {
     return [sampleDir, projectDir]
-  }
+  },
+  getTransformModulePath () {
+    return require.resolve('react-native-typescript-transformer')
+  },
+  getSourceExts () {
+    return ['ts', 'tsx']
+  },
 }

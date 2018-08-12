@@ -1,7 +1,8 @@
-import React from 'react';
-import { Button, View, TextInput, Text, StyleSheet } from 'react-native';
 import VKLogin from '@vovkasm/react-native-vkontakte-login';
+import React from 'react';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 import Logs from './Logs';
+import { ILogItem } from './types';
 
 const TEST_IMAGE = require('./assets/ycombinator.png');
 
@@ -34,8 +35,13 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class App extends React.Component {
-  state = {
+interface IState {
+  auth: any;
+  logs: ILogItem[];
+  permissions: string;
+}
+export default class App extends React.Component<{}, IState> {
+  state: IState = {
     auth: null,
     logs: [],
     permissions: 'friends email',
@@ -116,8 +122,8 @@ export default class App extends React.Component {
     }
   };
 
-  pushLog = (who, message, error = false) => {
-    const logItem = { who, when: Date.now(), error, message };
+  pushLog = (who: string, message: string, error?: boolean) => {
+    const logItem: ILogItem = { who, when: Date.now(), error, message };
     this.setState({ ...this.state, logs: [logItem, ...this.state.logs] });
   };
 
@@ -136,16 +142,26 @@ export default class App extends React.Component {
         </View>
         <View style={styles.permissionsContainer}>
           <Text style={styles.permissionsLabel}>Permissions:</Text>
-          <TextInput
-            value={this.state.permissions}
-            style={styles.permissionsInput}
-            onChangeText={permissions => this.setState({ permissions })}
-          />
-          <Button onPress={() => this.setState({ permissions: '' })} title="empty" />
-          <Button onPress={() => this.setState({ permissions: 'friends email' })} title="friends email" />
-          <Button onPress={() => this.setState({ permissions: 'friends email photos wall' })} title="+ photos wall" />
+          <TextInput value={this.state.permissions} style={styles.permissionsInput} onChangeText={this.onCustomPermissionsChange} />
+          <Button onPress={this.setPermissionsEmpty} title="empty" />
+          <Button onPress={this.setPermissionsDefault} title="friends email" />
+          <Button onPress={this.setPermissions3} title="+ photos wall" />
         </View>
       </View>
     );
   }
+
+  private onCustomPermissionsChange = (permissions: string) => {
+    this.setState({ permissions });
+  }
+  private setPermissionsEmpty = () => {
+    this.setState({ permissions: '' });
+  }
+  private setPermissionsDefault = () => {
+    this.setState({ permissions: 'friends email' });
+  }
+  private setPermissions3 = () => {
+    this.setState({ permissions: 'friends email photos wall' });
+  }
+
 }

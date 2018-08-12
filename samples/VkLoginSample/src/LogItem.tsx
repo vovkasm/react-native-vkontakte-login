@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { View, Text, StyleSheet } from 'react-native';
 import { format } from 'date-fns';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { ILogItem } from './types';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const LogItem = (props) => {
+const LogItem: React.SFC<ILogItem> = (props) => {
   const { when, who, message, error } = props;
   const textColor = { color: error ? '#d95b57' : '#507299' };
   const time = format(when, 'HH:mm:ss');
@@ -33,17 +33,6 @@ const LogItem = (props) => {
       <Text style={[styles.message, textColor]}>{message}</Text>
     </View>
   );
-};
-
-LogItem.propTypes = {
-  when: PropTypes.number.isRequired,
-  who: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired,
-  error: PropTypes.bool,
-};
-
-LogItem.defaultProps = {
-  error: false,
 };
 
 export default LogItem;
