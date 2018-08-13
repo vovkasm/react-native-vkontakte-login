@@ -1,4 +1,3 @@
-// tslint:disable:no-submodule-imports
 import { NativeModules, Platform } from 'react-native';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
