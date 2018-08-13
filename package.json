@@ -6,8 +6,8 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "rm -rf ./lib/ && mkdir lib && tsc",
-    "doc": "typedoc --theme markdown --hideGenerator --mdHideSources --excludeExternals --excludePrivate --readme none --target es6 --mode file --out ./docs/generated --name API ./src/",
     "prepublishOnly": "npm run build",
+    "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,15 +30,20 @@
   },
   "homepage": "https://github.com/vovkasm/react-native-vkontakte-login#readme",
   "devDependencies": {
-    "@types/prop-types": "15.5.3",
-    "@types/react": "16.4.7",
-    "@types/react-native": "^0.52.2",
+    "@babel/core": "7.0.0-beta.47",
+    "@types/react": "^16.4.9",
+    "@types/react-native": "^0.56.7",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-preset-react-native": "^5.0.0",
+    "date-fns": "^1.29.0",
+    "prop-types": "^15.6.2",
+    "react": "16.4.1",
+    "react-native": "0.56.0",
+    "react-native-typescript-transformer": "^1.2.10",
     "tslint": "^5.8.0",
     "tslint-eslint-rules": "^5.0.0",
     "tslint-react": "^3.2.0",
-    "typedoc": "^0.11.1",
-    "typedoc-plugin-markdown": "^1.0.11",
-    "typescript": "^2.7.2"
+    "typescript": "3.0.1"
   },
   "dependencies": {},
   "peerDependencies": {

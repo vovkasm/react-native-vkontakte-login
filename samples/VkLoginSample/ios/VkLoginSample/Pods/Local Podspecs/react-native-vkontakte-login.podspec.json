@@ -1,0 +1,28 @@
+{
+  "name": "react-native-vkontakte-login",
+  "version": "0.3.22",
+  "summary": "A React Native module that wraps VK SDK",
+  "authors": {
+    "Konstantin Kuznetsov": "K.Kuznetcov@gmail.com"
+  },
+  "homepage": "https://github.com/vovkasm/react-native-vkontakte-login",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://github.com/vovkasm/react-native-vkontakte-login.git"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ios/*.{h,m}",
+  "dependencies": {
+    "VK-ios-sdk": [
+
+    ],
+    "React": [
+
+    ]
+  }
+}
