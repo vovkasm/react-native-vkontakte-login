@@ -1,15 +1,14 @@
-// tslint:disable:no-submodule-imports
-import { NativeModules, Platform } from 'react-native';
-import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
+import { NativeModules, Platform } from 'react-native'
+import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource'
 
 /**
  * @hidden
  */
-const VKLogin: any = NativeModules.VkontakteManager;
+const VKLogin: any = NativeModules.VkontakteManager
 /**
  * @hidden
  */
-const VKShare: any = NativeModules.VkontakteSharing;
+const VKShare: any = NativeModules.VkontakteSharing
 
 /**
  * Response from login method
@@ -18,27 +17,27 @@ export interface VKLoginResult {
   /**
    * String token for use in request parameters
    */
-  access_token: string | null;
+  access_token: string | null
   /**
    * User email, or null, if permission was not given
    */
-  email: string | null;
+  email: string | null
   /**
    * **Android only** If user sets "Always use HTTPS" setting in his profile, it will be true
    */
-  https_required?: boolean;
+  https_required?: boolean
   /**
    * User secret to sign requests (if nohttps used)
    */
-  secret: string | null;
+  secret: string | null
   /**
    * Current user id for this token
    */
-  user_id: string | null;
+  user_id: string | null
   /**
    * Time when token expires
    */
-  expires_in?: number;
+  expires_in?: number
 }
 
 /**
@@ -48,19 +47,19 @@ export interface VKShareOptions {
   /**
    * Shared link name
    */
-  linkText?: string;
+  linkText?: string
   /**
    * Shared link URL
    */
-  linkUrl?: string;
+  linkUrl?: string
   /**
    * Shared text message
    */
-  description?: string;
+  description?: string
   /**
    * Shared image, local file resource, i.e. require('path/to/your/image.png')
    */
-  image?: number;
+  image?: number
 }
 
 export const enum VKError {
@@ -82,7 +81,6 @@ export const enum VKError {
  * Provides login and share functionality
  */
 export class VK {
-
   /**
    * Initializes VK SDK from JS code.
    * You only need to call this once before you call login or logout.
@@ -90,7 +88,7 @@ export class VK {
    * @param {number|string} vkAppId Your VK app id
    */
   static initialize(vkAppId: number | string): void {
-    VKLogin.initialize(typeof vkAppId === 'number' ? vkAppId : Number(vkAppId));
+    VKLogin.initialize(typeof vkAppId === 'number' ? vkAppId : Number(vkAppId))
   }
 
   /**
@@ -103,7 +101,7 @@ export class VK {
    * @returns {Promise<VKLoginResult>} Promise will be resolved with VKLoginResult object
    */
   static login(scopesArray: string[]): Promise<VKLoginResult> {
-    return VKLogin.login(scopesArray);
+    return VKLogin.login(scopesArray)
   }
 
   /**
@@ -111,7 +109,7 @@ export class VK {
    * @returns {Promise} empty promise
    */
   static logout(): Promise<void> {
-    return VKLogin.logout();
+    return VKLogin.logout()
   }
 
   /**
@@ -119,7 +117,7 @@ export class VK {
    * @returns {Promise<boolean>} Promise that resolves with boolean value
    */
   static isLoggedIn(): Promise<boolean> {
-    return VKLogin.isLoggedIn();
+    return VKLogin.isLoggedIn()
   }
 
   /**
@@ -130,9 +128,9 @@ export class VK {
    */
   static share(options: VKShareOptions): Promise<number> {
     if (options.image) {
-      options.image = resolveAssetSource(options.image).uri;
+      options.image = resolveAssetSource(options.image).uri
     }
-    return VKShare.share(options);
+    return VKShare.share(options)
   }
 
   /**
@@ -141,11 +139,11 @@ export class VK {
    */
   static getCertificateFingerprint(): Promise<string[]> {
     if (Platform.OS !== 'android') {
-      console.warn('getCertificateFingerprint is for Android only');
-      return Promise.resolve([]);
+      console.warn('getCertificateFingerprint is for Android only')
+      return Promise.resolve([])
     }
-    return VKLogin.getCertificateFingerprint();
+    return VKLogin.getCertificateFingerprint()
   }
 }
 
-export default VK;
+export default VK
