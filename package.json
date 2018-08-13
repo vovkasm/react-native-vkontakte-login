@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rm -rf ./lib/ && mkdir lib && tsc",
     "prepublishOnly": "npm run build",
-    "prettier": "prettier --write",
+    "prettier": "prettier --write '**/*.{js,md,json,ts,tsx}'",
     "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
