@@ -8,13 +8,13 @@ module.exports = {
   extraNodeModules: {
     '@vovkasm/react-native-vkontakte-login': projectDir,
   },
-  getProjectRoots: function () {
+  getProjectRoots: function() {
     return [sampleDir, projectDir]
   },
-  getTransformModulePath () {
+  getTransformModulePath() {
     return require.resolve('react-native-typescript-transformer')
   },
-  getSourceExts () {
+  getSourceExts() {
     return ['ts', 'tsx']
   },
 }
