@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rm -rf ./lib/ && mkdir lib && tsc",
     "prepublishOnly": "npm run build",
-    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

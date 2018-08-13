@@ -1,8 +1,8 @@
 'use strict'
 const path = require('path')
 
-const projectDir = path.resolve(__dirname, '.')
-const sampleDir = path.join(projectDir, 'samples/VkLoginSample')
+const sampleDir = path.resolve(__dirname)
+const projectDir = path.resolve(path.join(sampleDir, '../..'))
 
 module.exports = {
   extraNodeModules: {
