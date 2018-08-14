@@ -44,10 +44,6 @@ export default class App extends React.Component<{}, IState> {
     permissions: 'friends email',
   }
 
-  componentDidMount() {
-    VKLogin.initialize(6658972)
-  }
-
   onLogin = async () => {
     const permissions = this.state.permissions.trim().split(/[ ,]+/)
     this.pushLog('Login', `Logging in with permissions: ${permissions}`)

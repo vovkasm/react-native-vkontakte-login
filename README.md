@@ -9,26 +9,51 @@ It allows to log in to VK and obtain access token, which you can later use to ma
 - [x] Precompile all files, so module can be installed from git repo (no postinstall script)
 - [x] Remove all linking scripts (users supposed to make it by hands, sorry... I need control on my sources)
 
-## Compatibility
-
-Use version **0.3.x** of this module if you start a new project.
-
-If you already have a project which uses version **0.1.x** of this module, please do not upgrade to **v0.3.x**.
-This procedure is not tested and can cause issues.
-
-- Version **0.3.18** should work with react-native **0.47** and higher. However, **v0.3.x** was test only with react-native **0.52**
-
-**0.1.x** branch will be updated as needed to support latest releases of react-native.
-
-Readme for **0.1.x** branch can be found [here](docs/README_V1.md)
-
-- Version **0.1.17** is for react-native **0.47** and newer
-- Version **0.1.16** supports react-native from **0.41** up to **0.46**.
-- If you need to support older version, see commits history.
-
 ## Installation
 
-See [installation guide](docs/installation.md)
+### Prepare your application (iOS).
+
+Follow [Vkontakte iOS SDK](https://vk.com/dev/ios_sdk) documentation.
+
+1. Prepare for Using VK SDK
+2. Setup URL-schema of Your Application
+3. Add LSApplicationQueriesSchemes to Info.plist so SDK will allow to talk with Vkontakte application
+
+```
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>vk</string>
+		<string>vk-share</string>
+		<string>vkauthorize</string>
+	</array>
+```
+
+### Prepare your application (Android).
+
+(TODO)
+
+### Install module
+
+1. Add this module to your js dependencies and istall it (`npm install -P @vovkasm/react-native-vkontakte-login`)
+2. (iOS) Add it to `Podfile`:
+
+```ruby
+pod 'react-native-vkontakte-login', :path => '../node_modules/@vovkasm/react-native-vkontakte-login'
+```
+
+Run `pod install`
+Sorry, I don't support other linking methods for now. I'm using RN on iOS only with CocoaPods, it simplifies build infrastructure and reduces number of bugs.
+
+### SDK initialization
+
+Also VKLogin have initialize method, I recommend do it authomatically (you have to modify Info.plist anyway). So place your app id to Info.plist:
+
+```
+	<key>VK_APP_ID</key>
+	<integer>6658972</integer>
+```
+
+In this case you should not call initialize from JS.
 
 ## Usage
 
