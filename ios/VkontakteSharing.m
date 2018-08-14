@@ -93,7 +93,9 @@ RCT_EXPORT_METHOD(share:(NSDictionary *)data resolver:(RCTPromiseResolveBlock)re
         VKImage.sourceImage = image;
         shareDialog.uploadImages = @[VKImage];
       }
-      [self openShareDlg:shareDialog resolver:resolve rejecter:reject];
+      dispatch_async(self.methodQueue, ^{
+        [self openShareDlg:shareDialog resolver:resolve rejecter:reject];
+      });
     }];
   } else {
     [self openShareDlg:shareDialog resolver:resolve rejecter:reject];
