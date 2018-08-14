@@ -70,7 +70,7 @@
 		194B03B58FD0FF000079D63F28B0D592 /* RCTDecayAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 963BA9041406402064DA2F89A324D924 /* RCTDecayAnimation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		194B9E0552066EFA9208232BD33E095D /* RCTImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 86027B0DE3DDD14B0F05E14A81FDACDE /* RCTImageLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		195B7C753A0C305BD69E132C4887014C /* RCTStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 57827553EA0D02EA60E8E2BA8A96E200 /* RCTStatusBarManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		19A68ED48B3486950105072FA57C4349 /* VkontakteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFC8A4A47A604E92E8EE38197A5AB978 /* VkontakteManager.m */; };
+		19A68ED48B3486950105072FA57C4349 /* VkontakteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098875FF0566F64BE53A7917D423EFF /* VkontakteManager.m */; };
 		1A06825AF3A31353AEAB7497915A1112 /* RCTLocalAssetImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB1AE8F3F2F82D106AF32EE2D776571 /* RCTLocalAssetImageLoader.m */; };
 		1A4EDFFADCF4CADAE990377D347C3C52 /* VKApiWall.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EEE12C52E2D66281DF29E15485CA0C5 /* VKApiWall.m */; };
 		1B248ECDCD4A7828EC546A15EF6414A0 /* RCTResizeMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 53044C183D85D300D14B8AB9200EBB4C /* RCTResizeMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -133,7 +133,7 @@
 		2E3F227F36BB74D89B425E2285774226 /* JSBundleType.h in Headers */ = {isa = PBXBuildFile; fileRef = E87592C9FF3F7BD74F5D061896824962 /* JSBundleType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E57F716300C252AB227F09B4E992699 /* RCTVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AFB5CAFD18584DB0BE9B9865A56482 /* RCTVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E6B0D111B06E81A04717EC3F1D05A69 /* RCTNavItemManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 342618929B37E02E00619CED085BF891 /* RCTNavItemManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2EB16EEA7E351173FC7BAE0DA978DA25 /* VkontakteSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = BA500B9F64555669025F9D0959FC914C /* VkontakteSharing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EB16EEA7E351173FC7BAE0DA978DA25 /* VkontakteSharing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2392364BB393E97BACFBCD27E7BF9571 /* VkontakteSharing.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2EE05D2A28BCE4A49B93F69F95CD20A8 /* RCTModalManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4839281F4F9388CA24DC2DCE32EC2E /* RCTModalManager.m */; };
 		3000063A13FE879451225C8D0745D3E9 /* RCTI18nUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = AED2D407DF46B6B426BFAE313758DEEF /* RCTI18nUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		30152020516F3BBC60FE15AC70CD4065 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C028D36AD1E2E2B9D7058E802D8748C2 /* JavaScriptCore.framework */; };
@@ -249,7 +249,7 @@
 		5FE38F13B1F1BCE647B49A2BA16D2C81 /* VKLikes.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FF7AEC074047C962ECE30B9DC6A421 /* VKLikes.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6053ABDC4C7982FCD67D25AF232EB9D4 /* RCTBundleURLProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FEC8CC4FCE7824535A87E53D557583 /* RCTBundleURLProvider.m */; };
 		6063C429E08C74074A69AD2051CEA962 /* RCTInputAccessoryShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 83EC72A115323DEC53EDC6E746E71677 /* RCTInputAccessoryShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		606F9C9A6962EFBA4F4FD150D1843DEC /* react-native-vkontakte-login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501FC3400A8AE2970DF9E14F984E8A8C /* react-native-vkontakte-login-dummy.m */; };
+		606F9C9A6962EFBA4F4FD150D1843DEC /* react-native-vkontakte-login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C74B1AFBD1762F94F0538FD65221852 /* react-native-vkontakte-login-dummy.m */; };
 		60B96817BAA8A88798E8ECEFB29F8274 /* RCTNetInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 74B8CB887314ED0C01D75BB47719F87E /* RCTNetInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		60E2AC390EB1FE837499DD4947CCF40B /* RCTTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC0EB9089A5B9089DC1E75920B3A97B /* RCTTextViewManager.m */; };
 		61FA8CAD0FD2A9EE03A14E55113D44A8 /* RCTManagedPointer.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABACBE87E0DE4C9796C7AE76BD3147F7 /* RCTManagedPointer.mm */; };
@@ -285,7 +285,7 @@
 		6A44C40514E68C1B5B5A6444B2752DD0 /* RCTFollyConvert.mm in Sources */ = {isa = PBXBuildFile; fileRef = B8D7E5A5F9DEE45C3B54AB0C149DF8EB /* RCTFollyConvert.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
 		6B0ADEF44730E69F3C56D6597085FC06 /* RCTSurfaceRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = D36DD96A016272D86873310B5811C0AE /* RCTSurfaceRootView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B41603C7AB27509C5AAF0A151BB7C1C /* RCTSwitchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 761427004BEC968020A49CB29EC3B4D0 /* RCTSwitchManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6B616F1B971E1B61781FF1DB5205B690 /* VkontakteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 095FA54AD7BE68A87C63182C362FC9D3 /* VkontakteManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6B616F1B971E1B61781FF1DB5205B690 /* VkontakteManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A30BAEFA15387C5EC1CC841DA9BA2A1 /* VkontakteManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6B75D3EFE38388181E863F073FCA09A2 /* YGFloatOptional.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B36DE5B43A3113CA61E807D7E0A6D89 /* YGFloatOptional.cpp */; settings = {COMPILER_FLAGS = "-fno-omit-frame-pointer -fexceptions -Wall -Werror -std=c++1y -fPIC -fno-objc-arc"; }; };
 		6BC108E89637389BCCC7207BBDED4D54 /* RCTMultipartStreamReader.h in Headers */ = {isa = PBXBuildFile; fileRef = A84029F29181E5D3D1F92B421F6DF8ED /* RCTMultipartStreamReader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6BEC8D440751B334001D53D446F7D79E /* StringBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEF139C2EE9444575EDE2550F88A02E0 /* StringBase.cpp */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1"; }; };
@@ -485,7 +485,7 @@
 		B3BFF70B88564DC8F0B9A9322B0EF826 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 0991FD5AB0C1E701429818C7761B6D2D /* fishhook.c */; };
 		B44A4578B3B6A4231C814CE425A12D14 /* VKApiDocs.m in Sources */ = {isa = PBXBuildFile; fileRef = 30862F6000FC9991FC7A0A199E9E0A85 /* VKApiDocs.m */; };
 		B4656E0D556263652458025E79CEE4FF /* RCTSafeAreaShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07619E416585D3929D74C8D398623075 /* RCTSafeAreaShadowView.m */; };
-		B53331E7335A40681022E7AC6D68CC29 /* VkontakteSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B2A3E9C5395CAF53B08D081C893AFC /* VkontakteSharing.m */; };
+		B53331E7335A40681022E7AC6D68CC29 /* VkontakteSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFC3FBC122E80FEC44441476A52E97E /* VkontakteSharing.m */; };
 		B5640F41B9AD6117A4D041116213317B /* Pods-VkLoginSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5363FB65B2D5F0CD2DF130476629621 /* Pods-VkLoginSample-dummy.m */; };
 		B5A850CC162876AC16FC49C3E606CB41 /* RCTDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7EE23C761A72B6EAC35FA3801E1D06 /* RCTDatePicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B5DAE834CBC5B60E179AB8A6ACA28A39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DDE92101AACA755D2455EA8C12C1B5 /* CoreGraphics.framework */; };
@@ -857,7 +857,6 @@
 		077E263101EDCC4DFF0B3DB4F93C7AC2 /* VKCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKCounters.h; path = library/Source/API/models/VKCounters.h; sourceTree = "<group>"; };
 		079E773B9A52A2034879F4686A90F7EB /* RCTDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDisplayLink.m; sourceTree = "<group>"; };
 		0837925A23A79DDC988A00FF88C0301E /* RCTPickerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPickerManager.h; sourceTree = "<group>"; };
-		095FA54AD7BE68A87C63182C362FC9D3 /* VkontakteManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VkontakteManager.h; path = ios/VkontakteManager.h; sourceTree = "<group>"; };
 		096A43378D9A1F7C43D0A0B98BCE174F /* RCTUIManagerUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIManagerUtils.h; sourceTree = "<group>"; };
 		0986F5C3ABE72E0DA1E39ABBD44EBE5D /* yoga-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "yoga-dummy.m"; sourceTree = "<group>"; };
 		0991FD5AB0C1E701429818C7761B6D2D /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fishhook.c; path = Libraries/fishhook/fishhook.c; sourceTree = "<group>"; };
@@ -868,13 +867,12 @@
 		0AED59A4F53FCD110A92EFA0B3B40E45 /* noncopyable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = noncopyable.h; path = ReactCommon/jschelpers/noncopyable.h; sourceTree = "<group>"; };
 		0B36DE5B43A3113CA61E807D7E0A6D89 /* YGFloatOptional.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGFloatOptional.cpp; path = yoga/YGFloatOptional.cpp; sourceTree = "<group>"; };
 		0B46B189591D9FF8106C146881E88EA1 /* RCTKeyboardObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyboardObserver.m; sourceTree = "<group>"; };
-		0B4CC8EC255E148F65FB0C55B58D1654 /* header-search-path.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "header-search-path.png"; path = "docs/images/header-search-path.png"; sourceTree = "<group>"; };
 		0B57BB2CB34679149C51923B6B09F314 /* RCTScrollViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollViewManager.m; sourceTree = "<group>"; };
 		0BB08A97E286F93B241CEB48E05A452A /* JSCHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSCHelpers.h; path = ReactCommon/jschelpers/JSCHelpers.h; sourceTree = "<group>"; };
 		0BC64BF2EE182393D6061FE7774FBAD9 /* RCTJSCErrorHandling.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTJSCErrorHandling.mm; sourceTree = "<group>"; };
 		0BE35656F57556DE52A8FD077A7D5697 /* RCTSafeAreaViewLocalData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaViewLocalData.m; sourceTree = "<group>"; };
 		0C3A55000DF2733F6C578DFF6F1A6A8A /* VKShareDialogController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKShareDialogController.h; path = library/Source/Views/VKShareDialogController.h; sourceTree = "<group>"; };
-		0CC80D986BB8FAECB217F57D3EFF1979 /* manual_add_project.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = manual_add_project.png; path = docs/images/manual_add_project.png; sourceTree = "<group>"; };
+		0C74B1AFBD1762F94F0538FD65221852 /* react-native-vkontakte-login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-vkontakte-login-dummy.m"; sourceTree = "<group>"; };
 		0D22BFF32C6CC8219484B113CAE27E7B /* VKAuthorizeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKAuthorizeController.h; path = library/Source/Views/VKAuthorizeController.h; sourceTree = "<group>"; };
 		0DB82F560E181DE5F13F2B233B4E7787 /* RCTShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTShadowView.m; sourceTree = "<group>"; };
 		0DBED48501610E6C93D188FBF0A47A51 /* RCTConvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTConvert.h; sourceTree = "<group>"; };
@@ -892,6 +890,7 @@
 		10785BCB3060D03B240EEA583EA30FA2 /* RCTNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNullability.h; sourceTree = "<group>"; };
 		10AC23A22C626222B09F8F2FA3DFD51C /* log_severity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = log_severity.h; path = src/glog/log_severity.h; sourceTree = "<group>"; };
 		10E283FE463238705FE85E51AD16B8C6 /* JSDeltaBundleClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSDeltaBundleClient.h; path = ReactCommon/cxxreact/JSDeltaBundleClient.h; sourceTree = "<group>"; };
+		10ECAEE88151A066940CA5142ED86096 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		11027ED337B45D44DCE09D53434C993B /* YGStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGStyle.h; path = yoga/YGStyle.h; sourceTree = "<group>"; };
 		11682732C4775DE68B149B0CC06DD407 /* RCTAccessibilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAccessibilityManager.h; sourceTree = "<group>"; };
 		1177A98B21B02876D110B0FB6CA7886A /* RCTDeviceInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDeviceInfo.m; sourceTree = "<group>"; };
@@ -911,7 +910,6 @@
 		15CCDEE27FD274C4CE99E0A963CCB9C8 /* RCTTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBar.h; sourceTree = "<group>"; };
 		15F125A5E3197E66191F4DC1BE7AB182 /* JSCExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSCExecutor.h; path = ReactCommon/cxxreact/JSCExecutor.h; sourceTree = "<group>"; };
 		166CCBC9A934A4AD1FB335F8695E3FCA /* RCTBackedTextInputDelegateAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBackedTextInputDelegateAdapter.m; sourceTree = "<group>"; };
-		16B9A63250947881E8F4D5AE9530644B /* vk.md */ = {isa = PBXFileReference; includeInIndex = 1; name = vk.md; path = docs/generated/classes/vk.md; sourceTree = "<group>"; };
 		174B746812CF66B636A294319197C653 /* RCTConvert+Text.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+Text.m"; path = "Libraries/Text/RCTConvert+Text.m"; sourceTree = "<group>"; };
 		17B20690AD62912D74F779B699B9C55F /* RCTPackagerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTPackagerConnection.h; sourceTree = "<group>"; };
 		17BAAFB09C63659A74A4EDD2F8D80423 /* VK-ios-sdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "VK-ios-sdk.xcconfig"; sourceTree = "<group>"; };
@@ -945,6 +943,7 @@
 		1FBE50404AD37592D77A969A517EB452 /* RCTInputAccessoryViewContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTInputAccessoryViewContent.m; sourceTree = "<group>"; };
 		1FF57DEBBC8CA72B3272443CAE54C229 /* RCTNetworkTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTNetworkTask.m; path = Libraries/Network/RCTNetworkTask.m; sourceTree = "<group>"; };
 		2091703F27327771AB03D0AECB24F52C /* RCTWebSocketExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTWebSocketExecutor.m; path = Libraries/WebSocket/RCTWebSocketExecutor.m; sourceTree = "<group>"; };
+		2098875FF0566F64BE53A7917D423EFF /* VkontakteManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VkontakteManager.m; path = ios/VkontakteManager.m; sourceTree = "<group>"; };
 		20D8E62C70FF604EEDEC15D3DC661B12 /* VKApiGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKApiGroups.h; path = library/Source/API/methods/VKApiGroups.h; sourceTree = "<group>"; };
 		218A6BD3867AA16805CA2C6A7C76352C /* RCTJSCErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJSCErrorHandling.h; sourceTree = "<group>"; };
 		219104814312D3A5E1EB07DACEA00438 /* RCTTextAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTTextAttributes.h; path = Libraries/Text/RCTTextAttributes.h; sourceTree = "<group>"; };
@@ -953,6 +952,7 @@
 		22DD42CA89434AC7EEAE387566E2858E /* Pods-VkLoginSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VkLoginSample.debug.xcconfig"; sourceTree = "<group>"; };
 		22EE91A7AE635254CAEE70DA628D2EF0 /* VKResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKResponse.m; path = library/Source/Core/VKResponse.m; sourceTree = "<group>"; };
 		22FA8D230412F60187FA2C021023F249 /* RCTValueAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTValueAnimatedNode.m; sourceTree = "<group>"; };
+		2392364BB393E97BACFBCD27E7BF9571 /* VkontakteSharing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VkontakteSharing.h; path = ios/VkontakteSharing.h; sourceTree = "<group>"; };
 		23945DD8182834679D27DDE9A185C6E1 /* VKApi.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKApi.m; path = library/Source/API/VKApi.m; sourceTree = "<group>"; };
 		23AB0ADD5ACEF1B73D315CCD1DB62DE5 /* dynamic.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = dynamic.cpp; path = folly/dynamic.cpp; sourceTree = "<group>"; };
 		23D13710860C284D23F9DD0559765D04 /* VKImageParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKImageParameters.h; path = library/Source/Image/VKImageParameters.h; sourceTree = "<group>"; };
@@ -973,6 +973,7 @@
 		27B1C5AB5DD94E4006782689A7C7B9DF /* VKApiFriends.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKApiFriends.m; path = library/Source/API/methods/VKApiFriends.m; sourceTree = "<group>"; };
 		27F2640B0392EA59D8BB8EE945318B83 /* RCTTextShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextShadowView.m; sourceTree = "<group>"; };
 		28861545DA6D580C360826AD4EDEDB66 /* Pods-VkLoginSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VkLoginSample-resources.sh"; sourceTree = "<group>"; };
+		29809AC0E5DD4A95AFC011663F49AB9B /* react-native-vkontakte-login.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-vkontakte-login.xcconfig"; sourceTree = "<group>"; };
 		29D1AD03AF5C8DF3BB20C3710EA34B9E /* RCTSegmentedControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSegmentedControlManager.m; sourceTree = "<group>"; };
 		29DBA8FE80C37487A42EB971252F822D /* YGStyle.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGStyle.cpp; path = yoga/YGStyle.cpp; sourceTree = "<group>"; };
 		2A1EFE1BC38B11AF9FE9DFCDCBA76235 /* RCTImageLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTImageLoader.m; path = Libraries/Image/RCTImageLoader.m; sourceTree = "<group>"; };
@@ -988,7 +989,6 @@
 		2E4A5F1E464CED81883BEA747D43B971 /* RCTMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMacros.h; sourceTree = "<group>"; };
 		2E761CFF47E170907512D42B1CB47BBB /* RCTTouchHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchHandler.m; sourceTree = "<group>"; };
 		2EC6C7D6CDDBE71E910161F94B4C689B /* fixed-dtoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "fixed-dtoa.h"; path = "double-conversion/fixed-dtoa.h"; sourceTree = "<group>"; };
-		2EC988E25789E620E009896859C2CFF2 /* vkloginresult.md */ = {isa = PBXFileReference; includeInIndex = 1; name = vkloginresult.md; path = docs/generated/interfaces/vkloginresult.md; sourceTree = "<group>"; };
 		2F0216506A9BC0EE1D219BDFB1CF0153 /* Value.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Value.h; path = ReactCommon/jschelpers/Value.h; sourceTree = "<group>"; };
 		2F2715DF5CD8F998913182BA3120A1FD /* VKJSONOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKJSONOperation.m; path = library/Source/Core/VKJSONOperation.m; sourceTree = "<group>"; };
 		30862F6000FC9991FC7A0A199E9E0A85 /* VKApiDocs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKApiDocs.m; path = library/Source/API/methods/VKApiDocs.m; sourceTree = "<group>"; };
@@ -1012,7 +1012,6 @@
 		396F327F404693C3EEBEED2C70B34E2A /* JSCMemory.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = JSCMemory.cpp; path = ReactCommon/cxxreact/JSCMemory.cpp; sourceTree = "<group>"; };
 		39F15811591C6BC94AF965412DB82F96 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = yoga/YGMacros.h; sourceTree = "<group>"; };
 		3A08990845E7A2BD3A1A67710EB1EC91 /* RCTMultilineTextInputViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultilineTextInputViewManager.h; sourceTree = "<group>"; };
-		3A390F4D2E3F47FB2D189694D325C8C6 /* react-native-vkontakte-login.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "react-native-vkontakte-login.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A85808D5F5F2F65B749394AAD2A63A9 /* SystraceSection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SystraceSection.h; path = ReactCommon/cxxreact/SystraceSection.h; sourceTree = "<group>"; };
 		3B3CDC22E93AB5F41F3D86521393BCFA /* JSExecutor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = JSExecutor.cpp; path = ReactCommon/cxxreact/JSExecutor.cpp; sourceTree = "<group>"; };
 		3B7157954E9B2C4509C5931909F466E7 /* JSIndexedRAMBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSIndexedRAMBundle.h; path = ReactCommon/cxxreact/JSIndexedRAMBundle.h; sourceTree = "<group>"; };
@@ -1023,7 +1022,6 @@
 		3CD87D07C469C99DF908822614266F2F /* VKApiObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKApiObject.m; path = library/Source/API/models/VKApiObject.m; sourceTree = "<group>"; };
 		3DAAEF8C80C2E8C8BF609EE2DD4152E0 /* VKPermissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKPermissions.h; path = library/Source/VKPermissions.h; sourceTree = "<group>"; };
 		3E380975BC52C9AAF2D27DD7A1E866B2 /* logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logging.h; path = src/glog/logging.h; sourceTree = "<group>"; };
-		3E5A4B5023ECB3AB7A325733E9BDD075 /* other_linker_flags.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = other_linker_flags.png; path = docs/images/other_linker_flags.png; sourceTree = "<group>"; };
 		40C01607C4711738963E21D42F073108 /* RCTProfileTrampoline-arm64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm64.S"; sourceTree = "<group>"; };
 		41C17F2F945CFE9829689CC73862D6CF /* RCTNativeAnimatedNodesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTNativeAnimatedNodesManager.h; path = Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h; sourceTree = "<group>"; };
 		41D6AF28FEA2BFE5367861B7ECF7023F /* VKCaptchaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKCaptchaView.m; path = library/Source/Views/VKCaptchaView.m; sourceTree = "<group>"; };
@@ -1047,6 +1045,7 @@
 		4809B92CE72C0A1DCCF7811BF49B723F /* RCTUIManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIManager.h; sourceTree = "<group>"; };
 		484E4D8AF2C976C440398DCB6482D496 /* RCTNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTNetworking.h; path = Libraries/Network/RCTNetworking.h; sourceTree = "<group>"; };
 		48797C5D1FA8FD16B27DCDB2B02EC214 /* Unicode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Unicode.cpp; path = folly/Unicode.cpp; sourceTree = "<group>"; };
+		492B2190C61948DCE0E3737F22E64B8B /* react-native-vkontakte-login.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = "react-native-vkontakte-login.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4992707B5C6B1E0BA7C946038809E6E3 /* RCTRootView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootView.m; sourceTree = "<group>"; };
 		49CAE033FC0F01554D408A2F8FA5CB30 /* Yoga.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Yoga.cpp; path = yoga/Yoga.cpp; sourceTree = "<group>"; };
 		4A5782DE0FCAC0F703477596E8AF47B4 /* RCTJSStackFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTJSStackFrame.m; sourceTree = "<group>"; };
@@ -1072,7 +1071,6 @@
 		4FEEEB4A60D2C4E019005971792586A6 /* RCTAsyncLocalStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAsyncLocalStorage.m; sourceTree = "<group>"; };
 		50122E57AE94CAFBEDB7D21CADD7190C /* RCTCxxModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTCxxModule.h; sourceTree = "<group>"; };
 		501CDDE5972CB6CADFB75C372925CCBA /* RCTDatePickerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDatePickerManager.h; sourceTree = "<group>"; };
-		501FC3400A8AE2970DF9E14F984E8A8C /* react-native-vkontakte-login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-vkontakte-login-dummy.m"; sourceTree = "<group>"; };
 		51004E158F4194112C7BD4C5FBD9FD35 /* VKSharedTransitioningObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKSharedTransitioningObject.h; path = library/Source/Views/VKSharedTransitioningObject.h; sourceTree = "<group>"; };
 		515B069E18A331DF4F093C4D9CFE2AAE /* RCTBackedTextInputViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBackedTextInputViewProtocol.h; sourceTree = "<group>"; };
 		517D6F68C74293ED11AE560397328C91 /* RCTSourceCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSourceCode.h; sourceTree = "<group>"; };
@@ -1097,9 +1095,9 @@
 		59207EABAB1CB2434F291A81C3E25BB0 /* VKPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKPhoto.h; path = library/Source/API/models/VKPhoto.h; sourceTree = "<group>"; };
 		5933303CC379822FA930CD90E404DD13 /* RCTDevLoadingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDevLoadingView.h; sourceTree = "<group>"; };
 		59B1579F40E34107FB1AFF691363A7CC /* RCTVirtualTextShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTVirtualTextShadowView.m; sourceTree = "<group>"; };
-		59B2A3E9C5395CAF53B08D081C893AFC /* VkontakteSharing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VkontakteSharing.m; path = ios/VkontakteSharing.m; sourceTree = "<group>"; };
 		59C5758FF21492F312628E5DD7551F99 /* RCTImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTImageView.m; path = Libraries/Image/RCTImageView.m; sourceTree = "<group>"; };
 		5A3047C1271CC8098F5B1AD22B6F7C52 /* InspectorInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InspectorInterfaces.h; path = ReactCommon/jsinspector/InspectorInterfaces.h; sourceTree = "<group>"; };
+		5A30BAEFA15387C5EC1CC841DA9BA2A1 /* VkontakteManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VkontakteManager.h; path = ios/VkontakteManager.h; sourceTree = "<group>"; };
 		5A4D934B7B1F04C46F4FE38D3780B702 /* RCTMaskedViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMaskedViewManager.m; sourceTree = "<group>"; };
 		5A7E7C86012D5D2794CAF953376F278E /* double-conversion.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = "double-conversion.cc"; path = "double-conversion/double-conversion.cc"; sourceTree = "<group>"; };
 		5ACC21DD87E4F3A405A8F857C853E0C8 /* RCTFrameAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFrameAnimation.h; sourceTree = "<group>"; };
@@ -1180,18 +1178,15 @@
 		7831EB73618D6E434408BCE71E81855F /* RCTSurface.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurface.mm; sourceTree = "<group>"; };
 		78CB567D73FF5B1C5427D31664724467 /* RCTShadowView+Internal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTShadowView+Internal.m"; sourceTree = "<group>"; };
 		78D8FF5ADE118B8D3C132E5260F339AF /* RCTAppState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAppState.h; sourceTree = "<group>"; };
-		7922B7D8142B637A055C64CEFC9F50D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		79410FEBB5E0A329D8EA086ABF28A957 /* Folly-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Folly-dummy.m"; sourceTree = "<group>"; };
 		796EFF7637279524E9556E234A8F7B3C /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		797DBD021CB9A44BFA380001673CC84C /* RCTDiffClampAnimatedNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDiffClampAnimatedNode.h; sourceTree = "<group>"; };
-		798EA2D89797500ED6A4F038DBF0C29D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = docs/generated/README.md; sourceTree = "<group>"; };
 		799827ADAF204DFF01028618C96EA378 /* NSTextStorage+FontScaling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTextStorage+FontScaling.h"; sourceTree = "<group>"; };
 		7A6A3E64BFD7DF3352F3F9E4385165AB /* RCTRawTextViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRawTextViewManager.m; sourceTree = "<group>"; };
 		7A7C1AA4BE6037CABE515E6F07BD6429 /* YGEnums.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = YGEnums.cpp; path = yoga/YGEnums.cpp; sourceTree = "<group>"; };
 		7AA8A463792C9CEA228667320D5FF49A /* VKHTTPOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKHTTPOperation.h; path = library/Source/Core/VKHTTPOperation.h; sourceTree = "<group>"; };
 		7B14B2207B0B7618D1774CB50FBA501D /* JSCSamplingProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSCSamplingProfiler.h; path = ReactCommon/cxxreact/JSCSamplingProfiler.h; sourceTree = "<group>"; };
 		7B21D0CCF2CDFE916A1AF46E9D3AE0E9 /* RCTDevMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDevMenu.m; sourceTree = "<group>"; };
-		7B44001C0C69AC3893F4B9C3223E3CE0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		7B4E29CDF44F17A4E48D1A3CADF5E368 /* RCTRootContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootContentView.h; sourceTree = "<group>"; };
 		7B992845F1A0FFF0696EBF64E4A9DB86 /* RCTUIUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTUIUtils.h; sourceTree = "<group>"; };
 		7BCEBEAA8F1D3CCAA2B75E5482AD1150 /* RCTActivityIndicatorViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTActivityIndicatorViewManager.m; sourceTree = "<group>"; };
@@ -1203,7 +1198,6 @@
 		7E28B5544745E8F338919FF680EEA3AF /* double-conversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "double-conversion.h"; path = "double-conversion/double-conversion.h"; sourceTree = "<group>"; };
 		7E8EC830A28C2851AD062184C3375242 /* RCTBorderDrawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderDrawing.h; sourceTree = "<group>"; };
 		7EBC776821318A3AB60132215EF72051 /* RCTFileReaderModule.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTFileReaderModule.m; path = Libraries/Blob/RCTFileReaderModule.m; sourceTree = "<group>"; };
-		7F8441FEF1688CDBD3B6FAE81A6A522D /* vkerror.md */ = {isa = PBXFileReference; includeInIndex = 1; name = vkerror.md; path = docs/generated/enums/vkerror.md; sourceTree = "<group>"; };
 		7F9D4D62A60B6B35AD70C214F7276416 /* RCTURLRequestDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTURLRequestDelegate.h; sourceTree = "<group>"; };
 		7FDF2756028256510145A4FE3A0594A1 /* RCTBackedTextInputDelegateAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBackedTextInputDelegateAdapter.h; sourceTree = "<group>"; };
 		80AF0A4FB89D31A86DF018FC971BA4DF /* RCTTextSelection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextSelection.h; sourceTree = "<group>"; };
@@ -1221,7 +1215,6 @@
 		846D003EA2117B19ED51509897F0A831 /* RCTSurfaceView.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTSurfaceView.mm; sourceTree = "<group>"; };
 		8482138CA45362C2632512654113715F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
 		84BF1441A6545956E0A7B1B606955A3D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		85338029CBF20693B651E075F2C7A2AF /* url_types.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = url_types.png; path = docs/images/url_types.png; sourceTree = "<group>"; };
 		857373D77520AB9C7E97B1F8F601E533 /* VKUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKUtil.h; path = library/Source/Utils/VKUtil.h; sourceTree = "<group>"; };
 		85E308A9144522BC6C8BC51864945707 /* OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OrderedDictionary.h; path = library/Source/Utils/OrderedDictionary.h; sourceTree = "<group>"; };
 		85EAB375D8B7F2F76F21D3ADD185599A /* RCTDiffClampAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDiffClampAnimatedNode.m; sourceTree = "<group>"; };
@@ -1262,7 +1255,6 @@
 		8EB3491FFE2665C5A627728411D14C5B /* RCTUITextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUITextView.m; sourceTree = "<group>"; };
 		8F4006A13E903D3011E19377B6E41134 /* RCTTextAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTTextAttributes.m; path = Libraries/Text/RCTTextAttributes.m; sourceTree = "<group>"; };
 		8F8B30F88F2CD750C38DAF5E6C85C495 /* RCTBlobManager.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RCTBlobManager.mm; path = Libraries/Blob/RCTBlobManager.mm; sourceTree = "<group>"; };
-		8FD61E8CB2A22679CFF3E4406CA8A855 /* README_V1.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README_V1.md; path = docs/README_V1.md; sourceTree = "<group>"; };
 		9012379511CEC0ACF10E5C649E46C07D /* RCTSegmentedControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSegmentedControl.m; sourceTree = "<group>"; };
 		901580670D0DC76557ADB878D099DC48 /* RCTConvert+CoreLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+CoreLocation.h"; sourceTree = "<group>"; };
 		9026B2C16A2D98DF6500AE402B6D0AC6 /* VKUploadMessagesPhotoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKUploadMessagesPhotoRequest.h; path = library/Source/API/upload/VKUploadMessagesPhotoRequest.h; sourceTree = "<group>"; };
@@ -1278,7 +1270,6 @@
 		932A6D065489AA59554D511D5165B46B /* RCTMultipartStreamReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMultipartStreamReader.m; sourceTree = "<group>"; };
 		93995081860E417854B9ED068C34FED8 /* JSCExecutor.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = JSCExecutor.cpp; path = ReactCommon/cxxreact/JSCExecutor.cpp; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93C1B6A6C668EE0753806FB9CBC0FE69 /* installation.md */ = {isa = PBXFileReference; includeInIndex = 1; name = installation.md; path = docs/installation.md; sourceTree = "<group>"; };
 		93CC4A4A78BC80BFFBCF031F5F6C77C7 /* RCTAnimationType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAnimationType.h; sourceTree = "<group>"; };
 		94339E8FBD07A7852FE1A713F14DD28F /* RCTLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLayout.m; sourceTree = "<group>"; };
 		9469EE98DC27A47ECE0743683712E72A /* RCTFileReaderModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTFileReaderModule.h; path = Libraries/Blob/RCTFileReaderModule.h; sourceTree = "<group>"; };
@@ -1325,7 +1316,6 @@
 		A3421F4AC106C3A4472E780B9337191B /* RCTRefreshControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControlManager.m; sourceTree = "<group>"; };
 		A3674379E09FDFD7EFB9AFFD409D629E /* RCTSafeAreaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSafeAreaView.m; sourceTree = "<group>"; };
 		A3800BFBE0F7218742202D091FF2F059 /* JSCWrapper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = JSCWrapper.cpp; path = ReactCommon/jschelpers/JSCWrapper.cpp; sourceTree = "<group>"; };
-		A40FFCBA8D4FAE24521A7A7924FEA3EC /* vk_app_settings.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = vk_app_settings.png; path = docs/images/vk_app_settings.png; sourceTree = "<group>"; };
 		A4330AECCF1DD7C165B92DDC08A4A9CF /* RCTUITextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUITextField.m; sourceTree = "<group>"; };
 		A4369C009D5FE1A128B207BD82E3955E /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "library/Source/Utils/NSString+MD5.h"; sourceTree = "<group>"; };
 		A452B3B2AF9E44AB4DE462288F29BC73 /* NSDataBigString.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = NSDataBigString.mm; sourceTree = "<group>"; };
@@ -1340,7 +1330,6 @@
 		A72B7AB986F363D3CB5FDCA552E12ECA /* RCTBaseTextInputViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBaseTextInputViewManager.m; sourceTree = "<group>"; };
 		A72D58730F71299119C2D361B33B4DA7 /* RCTFont.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFont.mm; sourceTree = "<group>"; };
 		A7A25B92DDE20FDA12194BEB3BA9F655 /* RCTRootViewInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootViewInternal.h; sourceTree = "<group>"; };
-		A7DCEEAF0D7BC319DE93B2275AAA32F8 /* manual_link_library.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = manual_link_library.png; path = docs/images/manual_link_library.png; sourceTree = "<group>"; };
 		A84029F29181E5D3D1F92B421F6DF8ED /* RCTMultipartStreamReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartStreamReader.h; sourceTree = "<group>"; };
 		A8ED1D4DA48981247BE4FB6C41BF4A26 /* JsArgumentHelpers-inl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JsArgumentHelpers-inl.h"; path = "ReactCommon/cxxreact/JsArgumentHelpers-inl.h"; sourceTree = "<group>"; };
 		A9428DE26DE9EC3F17A8B51C49164249 /* MallocImpl.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = MallocImpl.cpp; path = folly/detail/MallocImpl.cpp; sourceTree = "<group>"; };
@@ -1361,14 +1350,12 @@
 		AC9C0F7CE579F944C6B46B6DE0E27AAB /* RCTTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBarItem.h; sourceTree = "<group>"; };
 		ACD84C0491C806E3284B064C2E21BA73 /* RCTEventAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTEventAnimation.m; sourceTree = "<group>"; };
 		AD560C310B8F14234201F97BEA6D4EDC /* RCTEventEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTEventEmitter.m; sourceTree = "<group>"; };
-		ADCDD553EB3EDEA33D9A2DA73B8D94EC /* manual_embed_framework.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = manual_embed_framework.png; path = docs/images/manual_embed_framework.png; sourceTree = "<group>"; };
 		ADE1A669F8C463D968D1094EC2E89288 /* VKRequestsScheduler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKRequestsScheduler.h; path = library/Source/Core/VKRequestsScheduler.h; sourceTree = "<group>"; };
 		AE0196253B742F0EC9F2DAF428703EC2 /* RCTEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventDispatcher.h; sourceTree = "<group>"; };
 		AE725AFC4A587B806FA933A70A450BB7 /* RCTWrapperViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWrapperViewController.m; sourceTree = "<group>"; };
 		AED2D407DF46B6B426BFAE313758DEEF /* RCTI18nUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTI18nUtil.h; sourceTree = "<group>"; };
 		AF23378F2BA2E277C8743B996351BB37 /* RCTBorderStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBorderStyle.h; sourceTree = "<group>"; };
 		AF753B03C3A2E4B01082CDC19D4B3242 /* RCTClipboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTClipboard.m; sourceTree = "<group>"; };
-		AF8771A59AA7456DEEF39F20978A47F3 /* API.md */ = {isa = PBXFileReference; includeInIndex = 1; name = API.md; path = docs/API.md; sourceTree = "<group>"; };
 		AFE8AADF590B2B6C935778E17D0B12BC /* RCTImageShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImageShadowView.h; path = Libraries/Image/RCTImageShadowView.h; sourceTree = "<group>"; };
 		B0129383F6915EC449D66521009846EA /* RCTSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSafeAreaViewManager.h; sourceTree = "<group>"; };
 		B01F8FA0163402608B7A5DD9AF160EDF /* RCTScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTScrollView.h; sourceTree = "<group>"; };
@@ -1400,13 +1387,13 @@
 		B8D7E5A5F9DEE45C3B54AB0C149DF8EB /* RCTFollyConvert.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFollyConvert.mm; sourceTree = "<group>"; };
 		B95268939DEC38041AB9859E9AE44717 /* RCTAdditionAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAdditionAnimatedNode.m; sourceTree = "<group>"; };
 		BA0BC2760B43C8D1C01A857F5F8B45E8 /* VKUploadPhotoRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKUploadPhotoRequest.h; path = library/Source/API/upload/VKUploadPhotoRequest.h; sourceTree = "<group>"; };
-		BA500B9F64555669025F9D0959FC914C /* VkontakteSharing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VkontakteSharing.h; path = ios/VkontakteSharing.h; sourceTree = "<group>"; };
 		BAB231353923B884D05E8DEE78967F05 /* RCTView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTView.h; sourceTree = "<group>"; };
 		BAB2DF959CF180E88CF8CABEEB0801F1 /* VKRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKRequest.m; path = library/Source/Core/VKRequest.m; sourceTree = "<group>"; };
 		BB022CFCD29E66098ECCB78F76D9B665 /* RCTSwitchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSwitchManager.m; sourceTree = "<group>"; };
 		BB1209449130539627AEA004AB2F908A /* Conv.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = Conv.cpp; path = folly/Conv.cpp; sourceTree = "<group>"; };
 		BB5B437AC6B80F25AB29E28E1DB64C46 /* RCTJavaScriptExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJavaScriptExecutor.h; sourceTree = "<group>"; };
 		BBEC9CDAAC2CC17DF936FEF212C1EB6E /* RCTProfileTrampoline-i386.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-i386.S"; sourceTree = "<group>"; };
+		BBFC3FBC122E80FEC44441476A52E97E /* VkontakteSharing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VkontakteSharing.m; path = ios/VkontakteSharing.m; sourceTree = "<group>"; };
 		BC153C2B6564435843194F810308FBD1 /* CxxNativeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CxxNativeModule.h; path = ReactCommon/cxxreact/CxxNativeModule.h; sourceTree = "<group>"; };
 		BC7CD00F3F1206CB071CE2FF03533285 /* RCTImageBlurUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTImageBlurUtils.h; path = Libraries/Image/RCTImageBlurUtils.h; sourceTree = "<group>"; };
 		BCF657308EA839D28FD6AD792CB69512 /* RCTBaseTextInputShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTBaseTextInputShadowView.m; sourceTree = "<group>"; };
@@ -1443,7 +1430,6 @@
 		C638DBBD080E1005416D967442FE1B41 /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libyoga.a; path = libyoga.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76A644EFCF61F340B2573DA482D7958 /* CxxNativeModule.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = CxxNativeModule.cpp; path = ReactCommon/cxxreact/CxxNativeModule.cpp; sourceTree = "<group>"; };
 		C77040D9514D101662A7C8B16E0D1805 /* RCTDeviceInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDeviceInfo.h; sourceTree = "<group>"; };
-		C7ACD0E187C81585F340460C061C94FA /* vkshareoptions.md */ = {isa = PBXFileReference; includeInIndex = 1; name = vkshareoptions.md; path = docs/generated/interfaces/vkshareoptions.md; sourceTree = "<group>"; };
 		C7FDB0578729306875D9C4669482846B /* RCTTabBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBarManager.h; sourceTree = "<group>"; };
 		C84A6071E5CBA57B144DB381055B9895 /* RCTClipboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTClipboard.h; sourceTree = "<group>"; };
 		C88A7DD7D9FC139BAAE696908AC5734A /* RCTEventAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventAnimation.h; sourceTree = "<group>"; };
@@ -1469,7 +1455,6 @@
 		CEC4FBBD5FFD525A1508080BA83CD76B /* RCTRedBoxExtraDataViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRedBoxExtraDataViewController.m; sourceTree = "<group>"; };
 		CF279E27F2AE81D353930504BBB0A8B9 /* RCTSinglelineTextInputView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSinglelineTextInputView.h; sourceTree = "<group>"; };
 		CF5DDDFA9ECD155D327967F5F2CAE7EA /* RCTRefreshControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRefreshControlManager.h; sourceTree = "<group>"; };
-		CFC8A4A47A604E92E8EE38197A5AB978 /* VkontakteManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VkontakteManager.m; path = ios/VkontakteManager.m; sourceTree = "<group>"; };
 		D008E22FE5E640DC8C789BC009EF2253 /* RCTAnimatedNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAnimatedNode.m; sourceTree = "<group>"; };
 		D17C77D3F900E463FAFD0F1E9AEEAA3C /* libVK-ios-sdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libVK-ios-sdk.a"; path = "libVK-ios-sdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2BD1196C0598189D15EE45D2ADFAC8F /* RCTParserUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTParserUtils.m; sourceTree = "<group>"; };
@@ -1506,7 +1491,6 @@
 		DC525B1ECA908BD1BA7A78CCB5431D25 /* RCTFrameUpdate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFrameUpdate.h; sourceTree = "<group>"; };
 		DC594321789B188B7D880D3D0FCFB406 /* Instance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Instance.h; path = ReactCommon/cxxreact/Instance.h; sourceTree = "<group>"; };
 		DC81E80C805A4799EF00CA2F95A77B8F /* VKApiUsers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKApiUsers.m; path = library/Source/API/methods/VKApiUsers.m; sourceTree = "<group>"; };
-		DD6E4DC4BFAAEACD06E918AD43D896F1 /* installation.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = installation.png; path = docs/images/installation.png; sourceTree = "<group>"; };
 		DDA542F19DF811EAE6DF624B97B6F8C3 /* RCTTabBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarItem.m; sourceTree = "<group>"; };
 		DE54C717F681CD717E2F3DA6F6E179FE /* NSDataBigString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSDataBigString.h; sourceTree = "<group>"; };
 		DED1E7D3224127F5D79DE2CEA5088DAC /* VKShareDialogController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKShareDialogController.m; path = library/Source/Views/VKShareDialogController.m; sourceTree = "<group>"; };
@@ -1550,11 +1534,12 @@
 		F13AA100E10F7054AEE63164C1955903 /* VKBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKBundle.h; path = library/Source/VKBundle.h; sourceTree = "<group>"; };
 		F1912A34873E86BC2A534453637F8A4F /* RCTLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLayout.h; sourceTree = "<group>"; };
 		F1BBEBC0250243118600F2265888DCC1 /* RCTTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextView.m; sourceTree = "<group>"; };
+		F1CC3CE1C0CF453C819F88F5C04BC75A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F1DB43F7FFEA5A926B20ACD7B5F58A9C /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = library/Resources/en.lproj; sourceTree = "<group>"; };
 		F216AA747A7C96B549B1A2A261B8272D /* RCTImageStoreManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTImageStoreManager.m; path = Libraries/Image/RCTImageStoreManager.m; sourceTree = "<group>"; };
 		F261EAA4C9B995D94BB0FF153ACAF4A3 /* RCTRedBoxExtraDataViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRedBoxExtraDataViewController.h; sourceTree = "<group>"; };
-		F27CCD49AF65412D4CE330B7E1AD7BF8 /* react-native-vkontakte-login.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-vkontakte-login.xcconfig"; sourceTree = "<group>"; };
 		F2834FC89BFF0C05A2DB4562ACA0E1D8 /* bignum.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = bignum.cc; path = "double-conversion/bignum.cc"; sourceTree = "<group>"; };
+		F2D264B717849BEDF82F32191B5A9F24 /* react-native-vkontakte-login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-vkontakte-login-prefix.pch"; sourceTree = "<group>"; };
 		F3430FAA3ADA63BACA4CD6C0C16933BF /* RCTProfileTrampoline-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm.S"; sourceTree = "<group>"; };
 		F4080BDBE333CD54448D70A9FB805AB7 /* ieee.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ieee.h; path = "double-conversion/ieee.h"; sourceTree = "<group>"; };
 		F4290D90BB8D59F1C7552E2BC055913E /* JSBigString.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = JSBigString.cpp; path = ReactCommon/cxxreact/JSBigString.cpp; sourceTree = "<group>"; };
@@ -1580,7 +1565,6 @@
 		FC77BAEE9C34B8987CEA5D15DF1B7997 /* RCTProgressViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTProgressViewManager.h; sourceTree = "<group>"; };
 		FCE464F8690540CE4152835FB44E78D2 /* VKLikes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKLikes.m; path = library/Source/API/models/VKLikes.m; sourceTree = "<group>"; };
 		FCEF783A85527688CBCE05E48119CF32 /* VKUploadImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VKUploadImage.m; path = library/Source/Image/VKUploadImage.m; sourceTree = "<group>"; };
-		FCF6D2AFE49DDBAE272B71A0FA914904 /* react-native-vkontakte-login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-vkontakte-login-prefix.pch"; sourceTree = "<group>"; };
 		FD216C6C819A6EDDF4096BE839D13596 /* VKApiWall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VKApiWall.h; path = library/Source/API/methods/VKApiWall.h; sourceTree = "<group>"; };
 		FD332D5BD02736687B2A1E3A6E8D8D6E /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = library/Resources/ru.lproj; sourceTree = "<group>"; };
 		FD362DDEFABE06A5CFF7730DDF1EB220 /* RCTFileRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTFileRequestHandler.h; path = Libraries/Network/RCTFileRequestHandler.h; sourceTree = "<group>"; };
@@ -1870,20 +1854,6 @@
 			path = glog;
 			sourceTree = "<group>";
 		};
-		20FBD8A4471A3D059B95394729AEBC8B /* react-native-vkontakte-login */ = {
-			isa = PBXGroup;
-			children = (
-				095FA54AD7BE68A87C63182C362FC9D3 /* VkontakteManager.h */,
-				CFC8A4A47A604E92E8EE38197A5AB978 /* VkontakteManager.m */,
-				BA500B9F64555669025F9D0959FC914C /* VkontakteSharing.h */,
-				59B2A3E9C5395CAF53B08D081C893AFC /* VkontakteSharing.m */,
-				3197FC95265F6EC696C9C86B4632D082 /* Pod */,
-				EC16B9CAB1677146E5EC1AB54E890ED9 /* Support Files */,
-			);
-			name = "react-native-vkontakte-login";
-			path = "/Volumes/work/react-native-vkontakte-login";
-			sourceTree = "<absolute>";
-		};
 		22D0A125DEBFC4B7CF4E48068C914525 /* DoubleConversion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1978,32 +1948,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DoubleConversion";
-			sourceTree = "<group>";
-		};
-		3197FC95265F6EC696C9C86B4632D082 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				AF8771A59AA7456DEEF39F20978A47F3 /* API.md */,
-				0B4CC8EC255E148F65FB0C55B58D1654 /* header-search-path.png */,
-				93C1B6A6C668EE0753806FB9CBC0FE69 /* installation.md */,
-				DD6E4DC4BFAAEACD06E918AD43D896F1 /* installation.png */,
-				7B44001C0C69AC3893F4B9C3223E3CE0 /* LICENSE */,
-				0CC80D986BB8FAECB217F57D3EFF1979 /* manual_add_project.png */,
-				ADCDD553EB3EDEA33D9A2DA73B8D94EC /* manual_embed_framework.png */,
-				A7DCEEAF0D7BC319DE93B2275AAA32F8 /* manual_link_library.png */,
-				3E5A4B5023ECB3AB7A325733E9BDD075 /* other_linker_flags.png */,
-				3A390F4D2E3F47FB2D189694D325C8C6 /* react-native-vkontakte-login.podspec */,
-				798EA2D89797500ED6A4F038DBF0C29D /* README.md */,
-				7922B7D8142B637A055C64CEFC9F50D0 /* README.md */,
-				8FD61E8CB2A22679CFF3E4406CA8A855 /* README_V1.md */,
-				85338029CBF20693B651E075F2C7A2AF /* url_types.png */,
-				16B9A63250947881E8F4D5AE9530644B /* vk.md */,
-				A40FFCBA8D4FAE24521A7A7924FEA3EC /* vk_app_settings.png */,
-				7F8441FEF1688CDBD3B6FAE81A6A522D /* vkerror.md */,
-				2EC988E25789E620E009896859C2CFF2 /* vkloginresult.md */,
-				C7ACD0E187C81585F340460C061C94FA /* vkshareoptions.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		358654A2204C0B4D45CEC868A2164A92 /* Text */ = {
@@ -2485,6 +2429,17 @@
 			path = React/DevSupport;
 			sourceTree = "<group>";
 		};
+		7D4779AA7C01D16F0588BCB2CF05E94E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29809AC0E5DD4A95AFC011663F49AB9B /* react-native-vkontakte-login.xcconfig */,
+				0C74B1AFBD1762F94F0538FD65221852 /* react-native-vkontakte-login-dummy.m */,
+				F2D264B717849BEDF82F32191B5A9F24 /* react-native-vkontakte-login-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "samples/VkLoginSample/ios/VkLoginSample/Pods/Target Support Files/react-native-vkontakte-login";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -2687,7 +2642,7 @@
 			isa = PBXGroup;
 			children = (
 				DCDF45BCEB68EAD33450A8918B6C72F3 /* React */,
-				20FBD8A4471A3D059B95394729AEBC8B /* react-native-vkontakte-login */,
+				D62E9238A391891B6B6797DB5568E858 /* react-native-vkontakte-login */,
 				39E790D238D147BE96623437E7F34FB7 /* yoga */,
 			);
 			name = "Development Pods";
@@ -2834,6 +2789,20 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D62E9238A391891B6B6797DB5568E858 /* react-native-vkontakte-login */ = {
+			isa = PBXGroup;
+			children = (
+				5A30BAEFA15387C5EC1CC841DA9BA2A1 /* VkontakteManager.h */,
+				2098875FF0566F64BE53A7917D423EFF /* VkontakteManager.m */,
+				2392364BB393E97BACFBCD27E7BF9571 /* VkontakteSharing.h */,
+				BBFC3FBC122E80FEC44441476A52E97E /* VkontakteSharing.m */,
+				F30660374B89D51B18EEFA99F2987D61 /* Pod */,
+				7D4779AA7C01D16F0588BCB2CF05E94E /* Support Files */,
+			);
+			name = "react-native-vkontakte-login";
+			path = "/Volumes/work/react-native-vkontakte-login";
+			sourceTree = "<absolute>";
+		};
 		D987FA62AF86B23A79967FF9E2937EC1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -2913,17 +2882,6 @@
 			path = Libraries/Text/BaseText;
 			sourceTree = "<group>";
 		};
-		EC16B9CAB1677146E5EC1AB54E890ED9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F27CCD49AF65412D4CE330B7E1AD7BF8 /* react-native-vkontakte-login.xcconfig */,
-				501FC3400A8AE2970DF9E14F984E8A8C /* react-native-vkontakte-login-dummy.m */,
-				FCF6D2AFE49DDBAE272B71A0FA914904 /* react-native-vkontakte-login-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "samples/VkLoginSample/ios/VkLoginSample/Pods/Target Support Files/react-native-vkontakte-login";
-			sourceTree = "<group>";
-		};
 		F0F190E445C632B4CFF6E4FF947A33E4 /* RawText */ = {
 			isa = PBXGroup;
 			children = (
@@ -2934,6 +2892,16 @@
 			);
 			name = RawText;
 			path = Libraries/Text/RawText;
+			sourceTree = "<group>";
+		};
+		F30660374B89D51B18EEFA99F2987D61 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F1CC3CE1C0CF453C819F88F5C04BC75A /* LICENSE */,
+				492B2190C61948DCE0E3737F22E64B8B /* react-native-vkontakte-login.podspec */,
+				10ECAEE88151A066940CA5142ED86096 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		F36218EFF3D5097967069B535C625AE4 /* Drivers */ = {
@@ -4121,7 +4089,7 @@
 		};
 		0E0397EF5BB841F1F4492A8F88C7BA05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F27CCD49AF65412D4CE330B7E1AD7BF8 /* react-native-vkontakte-login.xcconfig */;
+			baseConfigurationReference = 29809AC0E5DD4A95AFC011663F49AB9B /* react-native-vkontakte-login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -4207,7 +4175,7 @@
 		};
 		32C7BE05DB4EF016F5C2FA46633D0CA5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F27CCD49AF65412D4CE330B7E1AD7BF8 /* react-native-vkontakte-login.xcconfig */;
+			baseConfigurationReference = 29809AC0E5DD4A95AFC011663F49AB9B /* react-native-vkontakte-login.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

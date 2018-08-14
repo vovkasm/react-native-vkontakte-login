@@ -23,6 +23,7 @@ target 'VkLoginSample' do
   pod 'Folly', :podspec => root_dir + 'node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   pod 'react-native-vkontakte-login', :path => root_dir
+  pod 'VK-ios-sdk'
 end
 
 post_install do |installer|

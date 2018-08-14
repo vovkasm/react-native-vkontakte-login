@@ -63,6 +63,7 @@ DEPENDENCIES:
   - React/RCTNetwork (from `/Volumes/work/react-native-vkontakte-login/node_modules/react-native`)
   - React/RCTText (from `/Volumes/work/react-native-vkontakte-login/node_modules/react-native`)
   - React/RCTWebSocket (from `/Volumes/work/react-native-vkontakte-login/node_modules/react-native`)
+  - VK-ios-sdk
   - yoga (from `/Volumes/work/react-native-vkontakte-login/node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -100,6 +101,6 @@ SPEC CHECKSUMS:
   VK-ios-sdk: 7fd48bc5aaa6b96c3197c1987eb6593f2ea67331
   yoga: b1ce48b6cf950b98deae82838f5173ea7cf89e85
 
-PODFILE CHECKSUM: a395de72b8c1d28db6fd415c866f5f1b9f048b59
+PODFILE CHECKSUM: 360828a68ba6152c23c79445687b052d6744235d
 
 COCOAPODS: 1.5.3
