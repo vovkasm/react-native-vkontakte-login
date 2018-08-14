@@ -4,34 +4,31 @@ import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import Logs from './Logs'
 import { ILogItem } from './types'
 
-const TEST_IMAGE = require('./assets/ycombinator.png')
+import TEST_IMAGE from './assets/ycombinator.png'
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'stretch',
   },
-  buttonsContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 4,
-    borderTopWidth: 1,
-    borderTopColor: '#507299',
-  },
-  permissionsContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
+  logsContainer: {
+    borderBottomColor: '#507299',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    flex: 1,
+    marginBottom: 4,
   },
   permissionsInput: {
     flex: 1,
-    height: 36,
     fontSize: 12,
   },
   permissionsLabel: {
-    fontSize: 12,
     color: '#507299',
+    fontSize: 12,
+  },
+  row: {
+    alignItems: 'center',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
   },
 })
 
@@ -111,10 +108,10 @@ export default class App extends React.Component<{}, IState> {
     this.pushLog('share', 'Trying to share image...')
     try {
       const shareResponse = await VKLogin.share({
-        linkText: 'Cool site',
-        linkUrl: 'https://news.ycombinator.com/',
         description: 'Check out this cool site!',
         image: TEST_IMAGE,
+        linkText: 'Cool site',
+        linkUrl: 'https://news.ycombinator.com/',
       })
       this.pushLog('share', `Share result: ${JSON.stringify(shareResponse, null, 2)}`)
     } catch (error) {
@@ -130,23 +127,25 @@ export default class App extends React.Component<{}, IState> {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.container}>
+        <View style={styles.logsContainer}>
           <Logs logs={this.state.logs} />
         </View>
-        <View style={styles.buttonsContainer}>
+        <View style={styles.row}>
           <Button onPress={this.onLogin} title="Login" />
           <Button onPress={this.onLogout} title="Logout" />
           <Button onPress={this.onCheck} title="Is Logged" />
           <Button onPress={this.onRequest} title="Request" />
           <Button onPress={this.onShare} title="Share" />
         </View>
-        <View style={styles.permissionsContainer}>
+        <View style={styles.row}>
           <Text style={styles.permissionsLabel}>Permissions:</Text>
           <TextInput
             value={this.state.permissions}
             style={styles.permissionsInput}
             onChangeText={this.onCustomPermissionsChange}
           />
+        </View>
+        <View style={styles.row}>
           <Button onPress={this.setPermissionsEmpty} title="empty" />
           <Button onPress={this.setPermissionsDefault} title="friends email" />
           <Button onPress={this.setPermissions3} title="+ photos wall" />
