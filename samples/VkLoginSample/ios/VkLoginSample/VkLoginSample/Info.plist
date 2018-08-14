@@ -69,5 +69,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>VK_APP_ID</key>
+	<integer>6658972</integer>
 </dict>
 </plist>
