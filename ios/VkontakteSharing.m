@@ -87,13 +87,14 @@ RCT_EXPORT_METHOD(share:(NSDictionary*)data resolver:(RCTPromiseResolveBlock)res
 
     if (imageSource && _bridge.imageLoader) {
         [_bridge.imageLoader loadImageWithURLRequest:imageSource.request callback:^(NSError* error, UIImage* image) {
-             if (image == nil) {
-                 NSLog(@"Failed to load image");
-             } else {
-                 VKUploadImage* VKImage = [[VKUploadImage alloc] init];
-                 VKImage.sourceImage = image;
-                 shareDialog.uploadImages = @[VKImage];
+             if (error) {
+                 reject(RCTErrorUnspecified, nil, error);
+                 return;
              }
+
+             VKUploadImage* VKImage = [[VKUploadImage alloc] init];
+             VKImage.sourceImage = image;
+             shareDialog.uploadImages = @[VKImage];
              dispatch_async(self.methodQueue, ^{
                             [self openShareDlg:shareDialog resolver:resolve rejecter:reject];
                         });
