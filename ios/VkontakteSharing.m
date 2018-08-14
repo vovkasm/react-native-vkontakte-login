@@ -66,7 +66,7 @@ RCT_EXPORT_METHOD(share:(NSDictionary *)data resolver:(RCTPromiseResolveBlock)re
   }
 
   NSString *imagePath = data[@"image"];
-  NSMutableArray *permissions = @[VK_PER_WALL];
+  NSArray<NSString*>* permissions = @[VK_PER_WALL];
   if (imagePath != nil && imagePath.length){
     permissions = [permissions arrayByAddingObject:VK_PER_PHOTOS];
   }
