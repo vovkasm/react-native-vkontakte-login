@@ -120,9 +120,9 @@ RCT_REMAP_METHOD(logout, resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTP
   }
 }
 
-- (void)vkSdkUserAuthorizationFailed:(VKError *)error {
-  DMLog(@"Authrization failed with code %ld and message %@", (long)error.errorCode, error.errorMessage);
-  [self rejectLoginWithVKError:error];
+- (void)vkSdkUserAuthorizationFailed {
+  DMLog(@"Authrization failed");
+  self->loginRejector(E_VK_UNKNOWN, @"User Authorization Failed delegate method called", nil);
 }
 
 - (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
@@ -148,7 +148,7 @@ RCT_REMAP_METHOD(logout, resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTP
     return @{
         @"access_token" : token.accessToken,
         @"user_id" : token.userId,
-        @"expires_in" : [NSNumber numberWithInt:token.expiresIn],
+        @"expires_in" : [NSNumber numberWithInteger:token.expiresIn],
         @"email" : token.email ?: [NSNull null],
         @"secret" : token.secret ?: [NSNull null]
     };
