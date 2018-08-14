@@ -1,3 +1,4 @@
+import { ImageRequireSource, ImageURISource } from 'react-native';
 /**
  * Response from login method
  */
@@ -44,9 +45,9 @@ export interface VKShareOptions {
      */
     description?: string;
     /**
-     * Shared image, local file resource, i.e. require('path/to/your/image.png')
+     * Shared image, local file resource or ImageURISource same as for Image source prop
      */
-    image?: number;
+    image?: ImageURISource | ImageRequireSource;
 }
 export declare const enum VKError {
     E_NOT_INITIALIZED = "E_NOT_INITIALIZED",
