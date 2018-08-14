@@ -36,7 +36,7 @@
 
 @synthesize bridge = _bridge;
 
-- (void)openShareDlg:(VKShareDialogController *) dialog resolver: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock) reject {
+- (void)openShareDlg:(VKShareDialogController *)dialog resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject {
   UIViewController *root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
   [dialog setCompletionHandler:^(VKShareDialogController *dialog, VKShareDialogControllerResult result) {
     if (result == VKShareDialogControllerResultDone) {
@@ -58,7 +58,7 @@ RCT_EXPORT_MODULE();
   return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(share: (NSDictionary *) data resolver: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock) reject) {
+RCT_EXPORT_METHOD(share:(NSDictionary *)data resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
   DMLog(@"Open Share Dialog");
   if (![VKSdk initialized]){
     reject(RCTErrorUnspecified, nil, RCTErrorWithMessage(@"VK SDK must be initialized first"));

@@ -52,7 +52,7 @@ RCT_EXPORT_MODULE();
   return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(initialize: (nonnull NSNumber *) appId) {
+RCT_EXPORT_METHOD(initialize:(nonnull NSNumber*)appId) {
   DMLog(@"Initialize app id %@", appId);
 
   sdk = [VKSdk initializeWithAppId:[appId stringValue]];
@@ -60,7 +60,7 @@ RCT_EXPORT_METHOD(initialize: (nonnull NSNumber *) appId) {
   [sdk setUiDelegate:self];
 }
 
-RCT_EXPORT_METHOD(login: (NSArray *) scope resolver: (RCTPromiseResolveBlock) resolve rejecter: (RCTPromiseRejectBlock) reject) {
+RCT_EXPORT_METHOD(login:(NSArray<NSString*>*)scope resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
   DMLog(@"Login with scope %@", scope);
   if (![VKSdk initialized]){
     reject(E_NOT_INITIALIZED, @"VK SDK must be initialized first", nil);
@@ -83,15 +83,14 @@ RCT_EXPORT_METHOD(login: (NSArray *) scope resolver: (RCTPromiseResolveBlock) re
         break;
       }
       case VKAuthorizationError: {
-        NSString *errMessage = [NSString stringWithFormat:@"VK Authorization error: %@", [error localizedDescription]];
-        DMLog(errMessage);
+        DMLog(@"VK Authorization error: %@", [error localizedDescription]);
         [self rejectLoginWithError:error];
       }
     }
   }];
 };
 
-RCT_EXPORT_METHOD(isLoggedIn: (RCTPromiseResolveBlock) resolve rejecter: (RCTPromiseRejectBlock) reject) {
+RCT_EXPORT_METHOD(isLoggedIn:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
   if ([VKSdk initialized]){
     resolve([NSNumber numberWithBool:[VKSdk isLoggedIn]]);
   }
