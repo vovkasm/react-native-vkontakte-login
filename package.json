@@ -7,7 +7,9 @@
   "scripts": {
     "build": "rm -rf ./lib/ && mkdir lib && tsc",
     "prepublishOnly": "npm run build",
-    "prettier": "prettier --write '**/*.{js,md,json,ts,tsx}'",
+    "prettier": "npm run prettier:js && npm run prettier:native",
+    "prettier:js": "prettier --write '**/*.{js,md,json,ts,tsx}'",
+    "prettier:native": "uncrustify -c .uncrustify.cfg --no-backup ios/*.{h,m}",
     "start": "node ./scripts/start.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
