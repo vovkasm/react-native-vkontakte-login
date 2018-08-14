@@ -97,9 +97,9 @@ export declare class VK {
      * Opens VK share dialog either via VK mobile app or via WebView (if app is not installed on the device).
      * Make sure to have correct permissions!
      * @param {VKShareOptions} options VKShareOptions object
-     * @returns {Promise<number>} Promise that resolves with postId number
+     * @returns {Promise<string>} Promise that resolves with postId
      */
-    static share(options: VKShareOptions): Promise<number>;
+    static share(options: VKShareOptions): Promise<string>;
     /**
      * **Android only** - helper method to get fingerprints on JS side
      * @returns {Promise<string[]>} Promise that resolves with array of string fingerprints
