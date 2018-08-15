@@ -1,5 +1,11 @@
-import { NativeModules, Platform } from 'react-native'
-import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource'
+import {
+  Image,
+  ImageRequireSource,
+  ImageResolvedAssetSource,
+  ImageURISource,
+  NativeModules,
+  Platform,
+} from 'react-native'
 
 /**
  * @hidden
@@ -57,9 +63,9 @@ export interface VKShareOptions {
    */
   description?: string
   /**
-   * Shared image, local file resource, i.e. require('path/to/your/image.png')
+   * Shared image, local file resource or ImageURISource same as for Image source prop
    */
-  image?: number
+  image?: ImageURISource | ImageRequireSource
 }
 
 export const enum VKError {
@@ -127,10 +133,18 @@ export class VK {
    * @returns {Promise<string>} Promise that resolves with postId
    */
   static share(options: VKShareOptions): Promise<string> {
-    if (options.image) {
-      options.image = resolveAssetSource(options.image).uri
+    const nativeOptions: IVkontakteSharingShareOptions = {}
+    if (options.description) {
+      nativeOptions.description = options.description
     }
-    return VKShare.share(options)
+    if (options.linkText && options.linkUrl) {
+      nativeOptions.linkText = options.linkText
+      nativeOptions.linkUrl = options.linkUrl
+    }
+    if (options.image) {
+      nativeOptions.imageSource = Image.resolveAssetSource(options.image)
+    }
+    return VKShare.share(nativeOptions)
   }
 
   /**
@@ -156,7 +170,14 @@ interface IVkontakteManager {
 }
 
 interface IVkontakteSharing {
-  share(options: VKShareOptions): Promise<string>
+  share(options: IVkontakteSharingShareOptions): Promise<string>
+}
+
+interface IVkontakteSharingShareOptions {
+  linkText?: string
+  linkUrl?: string
+  description?: string
+  imageSource?: ImageResolvedAssetSource
 }
 
 export default VK

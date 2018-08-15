@@ -85,7 +85,6 @@ export default class App extends React.Component<{}, IState> {
     }
 
     const { user_id, access_token } = auth
-    // eslint-disable-next-line camelcase
     const reqUrl = `https://api.vk.com/method/friends.getOnline?user_id=${user_id}&access_token=${access_token}`
     try {
       const response = await fetch(reqUrl, { method: 'POST' })

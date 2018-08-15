@@ -66,11 +66,13 @@ RCT_EXPORT_METHOD(share:(NSDictionary*)data resolver:(RCTPromiseResolveBlock)res
         return;
     }
 
-    NSString* imagePath = data[@"image"];
     NSArray<NSString*>* permissions = @[VK_PER_WALL];
-    if (imagePath != nil && imagePath.length) {
+
+    RCTImageSource* imageSource = [RCTConvert RCTImageSource:data[@"imageSource"]];
+    if (imageSource) {
         permissions = [permissions arrayByAddingObject:VK_PER_PHOTOS];
     }
+
     VKSdk* sdk = [VKSdk instance];
     if (![sdk hasPermissions:permissions]) {
         reject(RCTErrorUnspecified, nil, RCTErrorWithMessage(@"Access denied: no access to call this method"));
@@ -80,20 +82,19 @@ RCT_EXPORT_METHOD(share:(NSDictionary*)data resolver:(RCTPromiseResolveBlock)res
     VKShareDialogController* shareDialog = [VKShareDialogController new];
     shareDialog.text = [RCTConvert NSString:data[@"description"]];
     shareDialog.shareLink = [[VKShareLink alloc] initWithTitle:[RCTConvert NSString:data[@"linkText"]]
-                                                          link:[NSURL URLWithString:[RCTConvert NSString:data[@"linkUrl"]]]];
+                                                          link:[RCTConvert NSURL:data[@"linkUrl"]]];
     shareDialog.dismissAutomatically = YES;
 
-    if (imagePath.length && _bridge.imageLoader) {
-        RCTImageSource* source = [RCTConvert RCTImageSource:data[@"image"]];
-
-        [_bridge.imageLoader loadImageWithURLRequest:source.request callback:^(NSError* error, UIImage* image) {
-             if (image == nil) {
-                 NSLog(@"Failed to load image");
-             } else {
-                 VKUploadImage* VKImage = [[VKUploadImage alloc] init];
-                 VKImage.sourceImage = image;
-                 shareDialog.uploadImages = @[VKImage];
+    if (imageSource && _bridge.imageLoader) {
+        [_bridge.imageLoader loadImageWithURLRequest:imageSource.request callback:^(NSError* error, UIImage* image) {
+             if (error) {
+                 reject(RCTErrorUnspecified, nil, error);
+                 return;
              }
+
+             VKUploadImage* VKImage = [[VKUploadImage alloc] init];
+             VKImage.sourceImage = image;
+             shareDialog.uploadImages = @[VKImage];
              dispatch_async(self.methodQueue, ^{
                             [self openShareDlg:shareDialog resolver:resolve rejecter:reject];
                         });
