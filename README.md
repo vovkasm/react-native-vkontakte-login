@@ -8,6 +8,8 @@ It allows to log in to VK and obtain access token, which you can later use to ma
 
 - [x] Precompile all files, so module can be installed from git repo (no postinstall script)
 - [x] Remove all linking scripts (users supposed to make it by hands, sorry... I need control on my sources)
+- [x] Cleanup codebase
+- [x] Remote images can be shared
 
 ## Installation
 
@@ -26,6 +28,15 @@ Follow [Vkontakte iOS SDK](https://vk.com/dev/ios_sdk) documentation.
 		<string>vk-share</string>
 		<string>vkauthorize</string>
 	</array>
+```
+
+4. Implement `application:openURL:options:` in `AppDelegate.m`
+
+```
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL ret = [VKSdk processOpenURL:url fromApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]];
+    return ret;
+}
 ```
 
 ### Prepare your application (Android).
