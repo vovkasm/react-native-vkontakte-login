@@ -37,7 +37,7 @@
 @synthesize bridge = _bridge;
 
 - (void)openShareDlg:(VKShareDialogController*)dialog resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject {
-    UIViewController* root = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    UIViewController* root = RCTPresentedViewController();
 
     [dialog setCompletionHandler:^(VKShareDialogController* dialog, VKShareDialogControllerResult result) {
          if (result == VKShareDialogControllerResultDone) {
