@@ -36,10 +36,16 @@ NSString* const E_VK_REQUEST_NOT_PREPARED = @"E_VK_REQUEST_NOT_PREPARED";
 
 - (instancetype)init {
     if (self = [super init]) {
-        NSNumber* appId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VK_APP_ID"];
-        if (appId) {
-            DMLog(@"Found appId %@ on startup", appId);
-            [self initialize:appId];
+        id appId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"VK_APP_ID"];
+        NSString* stringAppId = nil;
+        if ([appId isKindOfClass:NSString.class]) {
+            stringAppId = appId;
+        } else if ([appId isKindOfClass:NSNumber.class]) {
+            stringAppId = [appId stringValue];
+        }
+        if (stringAppId) {
+            DMLog(@"Found appId %@ on startup", stringAppId);
+            [self initialize:stringAppId];
         }
     }
     return self;
@@ -51,10 +57,10 @@ RCT_EXPORT_MODULE();
     return dispatch_get_main_queue();
 }
 
-RCT_EXPORT_METHOD(initialize:(nonnull NSNumber*)appId) {
+RCT_EXPORT_METHOD(initialize:(nonnull NSString*)appId) {
     DMLog(@"Initialize app id %@", appId);
 
-    sdk = [VKSdk initializeWithAppId:[appId stringValue]];
+    sdk = [VKSdk initializeWithAppId:appId];
     [sdk registerDelegate:self];
     [sdk setUiDelegate:self];
 }
