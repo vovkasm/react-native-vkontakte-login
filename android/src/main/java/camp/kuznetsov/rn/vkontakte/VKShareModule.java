@@ -69,10 +69,12 @@ public class VKShareModule extends ReactContextBaseJavaModule {
             fragment.dismiss();
         }
 
-        final VKShareDialogBuilder builder = new VKShareDialogBuilder()
-                .setText(data.getString("description"))
-                .setAttachmentLink(data.getString("linkText"), data.getString("linkUrl"))
-                .setShareDialogListener(new VKShareDialog.VKShareDialogListener() {
+        final VKShareDialogBuilder builder = new VKShareDialogBuilder();
+        if (data.hasKey("description")) builder.setText(data.getString("description"));
+        if (data.hasKey("linkText") && data.hasKey("linkUrl")) {
+            builder.setAttachmentLink(data.getString("linkText"), data.getString("linkUrl"));
+        }
+        builder.setShareDialogListener(new VKShareDialog.VKShareDialogListener() {
                     @Override
                     public void onVkShareComplete(int postId) {
                         Log.d(LOG, "onVkShareComplete");
