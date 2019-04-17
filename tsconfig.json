@@ -4,16 +4,17 @@
     "declaration": true,
     "esModuleInterop": true,
     "jsx": "react-native",
-    "lib": ["es6"],
+    "importHelpers": true,
+    "lib": ["es2018"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "noImplicitReturns": true,
     "noUnusedLocals": true,
-    "outDir": "lib/",
-    "preserveConstEnums": true,
-    "removeComments": false,
+    "outDir": "lib",
     "sourceMap": true,
     "strict": true,
-    "target": "es5"
+    "target": "es6",
+    "types": ["react", "react-native"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/*"]
 }

@@ -10,7 +10,7 @@
     "prettier": "npm run prettier:js && npm run prettier:native",
     "prettier:js": "prettier --write '**/*.{js,md,json,ts,tsx}'",
     "prettier:native": "uncrustify -c .uncrustify.cfg --no-backup ios/*.{h,m}",
-    "start": "node ./scripts/start.js",
+    "start": "react-native start --projectRoot samples/VkLoginSample",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,32 +26,31 @@
     "login",
     "share"
   ],
-  "author": "Konstantin Kuznetsov",
+  "author": "Vladimir Timofeev <vovkasm@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vovkasm/react-native-vkontakte-login/issues"
   },
   "homepage": "https://github.com/vovkasm/react-native-vkontakte-login#readme",
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.47",
-    "@types/react": "^16.4.9",
-    "@types/react-native": "^0.56.7",
-    "@vovkasm/tslint-config": "2.0.1",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-preset-react-native": "^5.0.0",
-    "date-fns": "^1.29.0",
-    "prettier": "1.14.2",
-    "prop-types": "^15.6.2",
-    "react": "16.4.1",
-    "react-native": "0.56.0",
-    "react-native-typescript-transformer": "^1.2.10",
-    "tslint": "^5.9.1",
-    "tslint-plugin-prettier": "^1.3.0",
-    "typescript": "3.0.1"
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "@types/react": "^16.8.12",
+    "@types/react-native": "^0.57.42",
+    "@vovkasm/tslint-config": "^2.0.1",
+    "date-fns": "^1.30.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "prettier": "^1.17.0",
+    "react": "16.8.3",
+    "react-native": "0.59.4",
+    "tslint": "^5.15.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.3"
   },
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
   "peerDependencies": {
     "react-native": ">=0.51.0"
-  },
-  "rnpm": {}
+  }
 }

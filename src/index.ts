@@ -68,7 +68,7 @@ export interface VKShareOptions {
   image?: ImageURISource | ImageRequireSource
 }
 
-export const enum VKError {
+export enum VKError {
   E_NOT_INITIALIZED = 'E_NOT_INITIALIZED',
   E_VK_UNKNOWN = 'E_VK_UNKNOWN',
   E_VK_API_ERROR = 'E_VK_API_ERROR',

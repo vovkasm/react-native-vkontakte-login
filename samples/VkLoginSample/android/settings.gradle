@@ -1,0 +1,3 @@
+rootProject.name = 'VkLoginSample'
+
+include ':app'
